@@ -1,0 +1,14 @@
+-- Seed data for local development
+-- NOTE: These reference auth.users that must exist first.
+-- When using Supabase local dev (npx supabase start), create a test user via
+-- the Auth UI at http://localhost:54323 or the CLI, then these rows auto-insert
+-- via the on_auth_user_created trigger.
+--
+-- If you want pre-seeded notes, create a user first then insert notes:
+--
+-- INSERT INTO public.notes (user_id, title, content, is_pinned) VALUES
+--   ('<user-uuid>', 'Welcome Note', 'This is your first note. Try editing or deleting it!', true),
+--   ('<user-uuid>', 'Shopping List', 'Eggs, milk, bread, butter', false),
+--   ('<user-uuid>', 'Project Ideas', '1. Build a weather app\n2. Create a recipe tracker\n3. Make a habit tracker', false),
+--   ('<user-uuid>', 'Meeting Notes', 'Discussed roadmap for Q2.\nAction items:\n- Finalize designs\n- Set up CI/CD', false),
+--   ('<user-uuid>', 'Book Recommendations', 'Clean Code by Robert Martin\nDesign Patterns by GoF\nThe Pragmatic Programmer', false);
